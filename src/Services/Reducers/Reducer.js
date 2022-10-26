@@ -5,12 +5,12 @@ const initialState = {
 };
 
 export default function cardItems(state=initialState, action){
-
+    console.warn('reducer', action);
     switch(action.type){
         case ADD_TO_CART:
             return {
                 ...state,
-                cardData:action.data
+                cardData: action.data
             };
             break;
         default:
