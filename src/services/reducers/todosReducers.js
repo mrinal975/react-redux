@@ -10,7 +10,7 @@ const initialState = {
   error: null,
 };
 
-const todosReducer = (state, action) => {
+const todosReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_TODO_REQUEST: {
       return {
